@@ -1,0 +1,17 @@
+function miniMaxSum(arr) {
+    var maxNumber = arr[0];
+    var minNumber = arr[0];
+    var arrSum = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if (maxNumber < arr[i]) {
+            maxNumber = arr[i];
+        } if (minNumber > arr[i]) {
+            minNumber = arr[i];
+        }
+    arrSum += arr[i];
+}
+    var maxSum = arrSum - minNumber;
+    var minSum = arrSum - maxNumber;
+    
+    console.log(minSum + ' ' + maxSum);
+}
