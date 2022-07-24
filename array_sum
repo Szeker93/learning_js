@@ -1,0 +1,4 @@
+function aVeryBigSum(ar) {
+    return ar.reduce(function (result, item)
+        {return result + item;}, 0);
+}
