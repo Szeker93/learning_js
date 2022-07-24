@@ -1,0 +1,21 @@
+function plusMinus(arr) {
+    var negative = 0;
+    var zero = 0;
+    var positive = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] < 0) {
+         negative ++;
+        } else if (arr[i] > 0) {
+            positive ++;
+        } else if (arr[i] == 0) {
+            zero ++;
+        }
+    }
+
+print (positive, arr.length);
+print (negative, arr.length);
+print (zero, arr.length);
+}
+function print (numberToPrint, div) {
+    console.log((numberToPrint/div).toPrecision(6));
+}
