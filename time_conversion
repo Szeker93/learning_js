@@ -1,0 +1,11 @@
+function timeConversion(s) {
+    var time = s.split("",s.length - 2);
+    if (s.includes("PM") && !(time[0] == "1" && time[1] == "2")) {
+        time[0] = (parseInt(time[0]) + 1).toString();
+        time[1] = (parseInt(time[1]) + 2).toString();
+    } if (s.includes("AM") && time[0] == "1" && time[1] == "2") {
+        time[0] = "0";
+        time[1] = "0";
+    }
+    return time.join("");
+}
