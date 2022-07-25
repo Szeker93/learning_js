@@ -1,0 +1,14 @@
+function birthdayCakeCandles(candles) {
+    var tallCandle = candles[0];
+    var numberOfTallCandle = 0;
+    for (var i = 0; i < candles.length; i++) {
+        if (tallCandle == candles[i]) {
+            numberOfTallCandle++;
+        };
+        if (tallCandle < candles[i]) {
+            tallCandle = candles[i];
+            numberOfTallCandle = 1;
+        };
+    };
+    return numberOfTallCandle;
+}
