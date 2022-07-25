@@ -1,0 +1,8 @@
+function gradingStudents(grades) {
+    for (var i = 0; i < grades.length; i++) {
+        if (grades[i] >= 38 && grades[i]%5 > 2) {
+            grades[i] = Math.ceil(grades[i]/5)*5;
+        }
+    }
+return grades;
+}
